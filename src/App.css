@@ -24,10 +24,53 @@
   border-radius: 999px;
 }
 
+.app__controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.app__buscador {
+  min-width: 260px;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.filtro-categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filtro-categoria__boton {
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 0.8rem;
+  background: #f3f4f6;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filtro-categoria__boton.activo {
+  background: #7b3f00;
+  color: white;
+}
+
 .app__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+}
+
+.app__sin-resultados {
+  margin-top: 1rem;
+  color: #7b3f00;
+  font-weight: 700;
 }
 
 .receta-card {
