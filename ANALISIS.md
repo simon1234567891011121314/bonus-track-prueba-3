@@ -56,11 +56,11 @@ Renderizado de listas (.map + key)
 
 ¿Dónde lo usas en este problema?
 
-R:
+R: Se utilizan en App.jsx para mostrar los resultados importados de la data entregada previamente.
 
 ¿Por qué es el adecuado?
 
-R:
+R: Para la visualización de los componentes de, por ejemplo la lista de recetas.
 
 _____________________________________________________________________________________
 
@@ -68,11 +68,11 @@ Renderizado condicional
 
 ¿Dónde lo usas en este problema?
 
-R:
+R: Similar al anterior, en donde se efectúa el renderizado en App.jsx igualmente, pero con condiciones determinadas.
 
 ¿Por qué es el adecuado?
 
-R:
+R: Porque en este ejercicio se requieren condicionales como, por ejemplo, el hecho de que no todos los platos son vegetarianos, o por las cantidades, que bien podrían ser 0, y para eso se debe renderizar tal escenario.
 
 _____________________________________________________________________________________
 
@@ -80,11 +80,12 @@ ________________________________________________________________________________
 
 ¿Qué ventajes tiene dividir el recetario en componentes en lugar de escribir todo en un solo archivo?
 
-R: 
+R: La ventaja es que cada uno de esos componentes se enfoca puramente en su tarea tarea principal, ya sea 
+el listado de tareas, o el código para filtrar las categorías, si eliminas uno te quedará el resto y la página podría funcionar si se ajusta un poco.
 
 *************************************************************************************
 
 ¿Qué diferencia hay entre props y estado en tu solución? Da un ejemplo concreto de cada uno tomado
 de esta aplicación.
 
-R: 
+R: En el caso de props, se necesitan para que los componentes se comuniquen entre sí, y así enviar algún tipo de información, por ejemplo, el componente RecetaCard recibe props importados desde otro componente. Mientras que estado es la situación en la que se encuentra el contenido del componente en sí. Por ejemplo, el estado de una carta de receta.

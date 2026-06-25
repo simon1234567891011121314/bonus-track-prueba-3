@@ -1,0 +1,103 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  font-family: Arial, sans-serif;
+  color: #2f2f2f;
+}
+
+.app__header {
+  margin-bottom: 1.5rem;
+}
+
+.app__header h1 {
+  margin-bottom: 0.5rem;
+  color: #7b3f00;
+}
+
+.app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.receta-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #d9d9d9;
+}
+
+.receta-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.receta-card__header h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.receta-card__origen {
+  margin: 0;
+  color: #6f6f6f;
+  font-size: 0.95rem;
+}
+
+.receta-card__badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  background: #6b7280;
+  white-space: nowrap;
+}
+
+.receta-card__descripcion {
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+.receta-card__meta {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.receta-card__ingredientes h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+}
+
+.receta-card__ingredientes ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.receta-card.entrada {
+  border-top-color: #2f80ed;
+}
+
+.receta-card.entrada .receta-card__badge {
+  background: #2f80ed;
+}
+
+.receta-card.fondo {
+  border-top-color: #27ae60;
+}
+
+.receta-card.fondo .receta-card__badge {
+  background: #27ae60;
+}
+
+.receta-card.postre {
+  border-top-color: #e67e22;
+}
+
+.receta-card.postre .receta-card__badge {
+  background: #e67e22;
+}
