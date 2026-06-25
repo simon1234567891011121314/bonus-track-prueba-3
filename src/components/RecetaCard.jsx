@@ -7,17 +7,22 @@ function RecetaCard({
   categoria,
   descripcion,
   ingredientes,
+  esVegetariana,
 }) {
   const categoriaClase = categoria?.toLowerCase() || 'general';
+  const claseVegetariana = esVegetariana ? 'receta-card--vegetariana' : '';
 
   return (
-    <article className={`receta-card ${categoriaClase}`}>
+    <article className={`receta-card ${categoriaClase} ${claseVegetariana}`.trim()}>
       <div className="receta-card__header">
         <div>
           <h2>{nombre}</h2>
           <p className="receta-card__origen">{origen}</p>
         </div>
-        <span className="receta-card__badge">{categoria}</span>
+        <div className="receta-card__badges">
+          {esVegetariana && <span className="receta-card__veg">VEG</span>}
+          <span className="receta-card__badge">{categoria}</span>
+        </div>
       </div>
 
       <p className="receta-card__descripcion">{descripcion}</p>
@@ -45,6 +50,7 @@ RecetaCard.propTypes = {
   categoria: PropTypes.string,
   descripcion: PropTypes.string,
   ingredientes: PropTypes.arrayOf(PropTypes.string),
+  esVegetariana: PropTypes.bool,
 };
 
 RecetaCard.defaultProps = {
@@ -54,6 +60,7 @@ RecetaCard.defaultProps = {
   categoria: 'General',
   descripcion: 'Sin descripción disponible.',
   ingredientes: [],
+  esVegetariana: false,
 };
 
 export default RecetaCard;

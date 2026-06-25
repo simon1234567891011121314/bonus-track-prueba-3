@@ -49,6 +49,8 @@ function App() {
         <FiltroCategoria filtroActual={filtroCategoria} onCambiarFiltro={setFiltroCategoria} />
       </section>
 
+      <p className="app__contador">Vegetarianas: {recetas.filter((receta) => receta.esVegetariana).length}</p>
+
       {recetasFiltradas.length > 0 ? (
         <ListaRecetas recetas={recetasFiltradas} />
       ) : (

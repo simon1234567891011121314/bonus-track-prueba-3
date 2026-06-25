@@ -91,12 +91,30 @@
 .receta-card__header h2 {
   margin: 0 0 0.25rem;
   font-size: 1.1rem;
+  color: #111827;
 }
 
 .receta-card__origen {
   margin: 0;
   color: #6f6f6f;
   font-size: 0.95rem;
+}
+
+.receta-card__badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.receta-card__veg {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: white;
+  background: #1f9d5a;
+  white-space: nowrap;
 }
 
 .receta-card__badge {
@@ -107,6 +125,11 @@
   color: white;
   background: #6b7280;
   white-space: nowrap;
+}
+
+.receta-card--vegetariana {
+  border: 2px solid #1f9d5a;
+  box-shadow: 0 0 0 2px rgba(31, 157, 90, 0.15);
 }
 
 .receta-card__descripcion {
